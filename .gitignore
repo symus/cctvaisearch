@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+
+# Local configuration and secrets
+.env
+*.local
+
+# Application data: database, reference photos, thumbnails, embeddings,
+# FAISS indexes, model weights, clips, logs. Never commit these.
+data/
+*.sqlite3
+*.sqlite3-*
+*.faiss
+*.onnx
+*.pt
+*.pth
+*.npy
+logs/
+*.log
+clips/
+
+# Test videos generated locally
+sample-videos/
+*.tsbuildinfo
